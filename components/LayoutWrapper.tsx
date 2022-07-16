@@ -4,7 +4,6 @@ import Footer from './Footer';
 import Link from './Link';
 import MobileNav from './MobileNav';
 import SectionContainer from './SectionContainer';
-import ThemeSwitch from './ThemeSwitch';
 
 interface Props {
   children: ReactNode;
@@ -27,7 +26,6 @@ const LayoutWrapper = ({ children }: Props) => {
                 </Link>
               ))}
             </div>
-            <ThemeSwitch />
             <MobileNav />
           </div>
         </header>
