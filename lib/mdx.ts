@@ -4,7 +4,6 @@ import { bundleMDX } from 'mdx-bundler';
 import path from 'path';
 import readingTime from 'reading-time';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
-import { PostFrontMatter } from 'types/PostFrontMatter';
 import { Toc } from 'types/Toc';
 import getAllFilesRecursively from './utils/files';
 // Remark packages
@@ -129,8 +128,6 @@ export async function getAllFilesFrontMatter(folder: 'blog' | 'courses') {
   const prefixPaths = path.join(root, 'data', folder);
 
   const files = getAllFilesRecursively(prefixPaths);
-
-  const allFrontMatter: PostFrontMatter[] = [];
 
   files.forEach((file: string) => {
     // Replace is needed to work on Windows

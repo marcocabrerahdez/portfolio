@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'Marco Cabrera Hernández',
-  author: 'Karan Pratap Singh',
-  headerTitle: 'Karan Pratap Singh',
+  author: 'Marco Cabrera Hernández',
+  headerTitle: 'Marco Cabrera Hernández',
   description:
     'I am a passionate student of Computer Science. I create amazing web applications to make the internet a better place.',
   language: 'en-us',
