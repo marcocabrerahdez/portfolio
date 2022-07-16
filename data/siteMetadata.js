@@ -10,7 +10,6 @@ const siteMetadata = {
   siteRepo: 'hhttps://github.com/alu0101327372/portfolio',
   siteLogo: '/static/images/logo.png',
   image: '/static/avatar.jpg',
-  socialBanner: '/static/banner.png',
   email: 'marco.cabrerahdez@gmail.com',
   github: 'https://github.com/alu0101327372',
   twitter: 'https://twitter.com/marcocabreraa_',
