@@ -4,6 +4,7 @@ export const Colors = {
   python: '#4B8BBE',
   typescript: '#234A84',
   javascript: '#F7DF1E',
+  cplusplus: '#21618C',
 
   // Frontend
   web: '#2D2D2D',
@@ -13,6 +14,7 @@ export const Colors = {
   // Backend
   graphql: '#E535AB',
   node: '#68A063',
+  express: '#52BE80',
   django: '#092E20',
 
   // Tools, Libs
