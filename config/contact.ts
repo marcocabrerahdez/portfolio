@@ -13,7 +13,7 @@ export interface Contact {
 
 export const contact: Contact = {
   twitter: '@marcocabreraa_',
-  site: 'karanpratapsingh.com',
+  site: 'portfolio-alu0101327372.vercel.app',
   links: {
     github: 'https://github.com/alu0101327372',
     linkedin: 'https://www.linkedin.com/in/marcocabrerahdez/',

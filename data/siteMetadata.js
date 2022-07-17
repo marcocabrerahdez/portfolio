@@ -6,7 +6,7 @@ const siteMetadata = {
     'I am a passionate student of Computer Science. I create amazing web applications to make the internet a better place.',
   language: 'en-us',
   theme: 'dark',
-  siteUrl: 'https://karanpratapsingh.com',
+  siteUrl: 'https://portfolio-alu0101327372.vercel.app',
   siteRepo: 'hhttps://github.com/alu0101327372/portfolio',
   siteLogo: '/static/images/logo.png',
   image: '/static/avatar.jpg',

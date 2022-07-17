@@ -1,7 +1,6 @@
 import { Header } from '@/components/Form';
 import StackList from '@/components/list/StackList';
 import { PageSEO } from '@/components/SEO';
-import { useRandomColorPair } from '@/lib/hooks/useRandomColorPair';
 import { WorkStack } from 'config/stack';
 import Image from 'next/image';
 import { ReactNode } from 'react';
@@ -15,7 +14,6 @@ interface Props {
 
 export default function AuthorLayout({ children, frontMatter }: Props) {
   const { name, avatar, occupation, company, resume } = frontMatter;
-  const [resumeColor] = useRandomColorPair();
 
   return (
     <>
@@ -55,7 +53,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                   animationDelay={250}
                   animationDuration={2000}
                   strokeWidth={2}
-                  color={resumeColor}
+                  color='#F7DC6F'
                 >
                   Resume
                 </RoughNotation>
