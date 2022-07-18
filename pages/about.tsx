@@ -1,4 +1,5 @@
 import { MDXLayoutRenderer } from '@/components/MDXComponents';
+import { Animate } from '@/components/Animate';
 import { getFileBySlug } from '@/lib/mdx';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
@@ -22,10 +23,18 @@ export default function About({
   const { mdxSource, frontMatter } = authorDetails;
 
   return (
-    <MDXLayoutRenderer
-      layout={frontMatter.layout || DEFAULT_LAYOUT}
-      mdxSource={mdxSource}
-      frontMatter={frontMatter}
-    />
+    <Animate
+    as="h1"
+    animation={{
+      opacity: [0, 1],
+      scale: [0.75, 1],
+    }}
+    >
+      <MDXLayoutRenderer
+        layout={frontMatter.layout || DEFAULT_LAYOUT}
+        mdxSource={mdxSource}
+        frontMatter={frontMatter}
+      />
+    </Animate>
   );
 }

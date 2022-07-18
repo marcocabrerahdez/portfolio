@@ -4,9 +4,7 @@ import { getFileBySlug } from '@/lib/mdx';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import dynamic from 'next/dynamic';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
-
-// TODO: Direct share functionality.
-// TODO: Switch geist-ui with something simple.
+import { Animate } from '@/components/Animate';
 
 // @ts-ignore
 export const getStaticProps: GetStaticProps<{
@@ -32,7 +30,15 @@ export default function Home({
         title={siteMetadata.title}
         description={siteMetadata.description}
       />
-      <Banner frontMatter={author} />
+      <Animate
+        as="h1"
+        animation={{
+          opacity: [0, 1],
+          scale: [0.75, 1],
+        }}
+      >
+        <Banner frontMatter={author} />
+      </Animate>
     </>
   );
 }

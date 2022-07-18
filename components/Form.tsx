@@ -54,15 +54,3 @@ export function H2(props: BaseProps): React.ReactElement {
     </h2>
   );
 }
-
-export function H3(props: BaseProps): React.ReactElement {
-  const { className, children } = props;
-
-  return (
-    <h3
-      className={clsx('mb-1 text-lg font-semibold dark:text-white', className)}
-    >
-      {children}
-    </h3>
-  );
-}
