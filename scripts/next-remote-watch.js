@@ -5,7 +5,6 @@
 // The app listens to the event and triggers a client-side router refresh
 // see components/ClientReload.js
 
-const chalk = require('chalk');
 const chokidar = require('chokidar');
 const program = require('commander');
 const http = require('http');
