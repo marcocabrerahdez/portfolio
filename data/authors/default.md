@@ -8,7 +8,7 @@ resume: https://drive.google.com/file/d/1mMtsKmuiuR3VYILE2GApYKZOJ-5s_3fp/view?u
 email: marco.cabrerahdez@gmail.com
 twitter: https://twitter.com/marcocabreraa_
 linkedin: https://www.linkedin.com/in/marcocabrerahdez/
-github: https://github.com/alu0101327372
+github: https://github.com/marcocabrerahdez
 ---
 
 A software engineer who values learning and growing with people, teams, and technologies. Experienced at writing code in a high-paced environment.

@@ -31,12 +31,12 @@ export const projects: Project[] = [
       'Ready to deploy, distributed cryptocurrency trading bot. The idea of this project originally came from a script I used to automate buying and selling of fiat assets. I was curious and wanted to scale it into a real system which can execute trades for me. I had a lot of fun building this. I got to play with lots of different technologies while growing my financial knowledge.',
     shortDescription:
       'A two-dimensional universal Turing machine with a very simple set of rules but complex emergent behavior.',
-    repository: 'https://github.com/alu0101327372/Langtons-Ant',
+    repository: 'https://github.com/marcocabrerahdez/Langtons-Ant',
     stack: [
       Stack.cplusplus,
     ],
     deployment: {
-      web: 'https://github.com/alu0101327372/Langtons-Ant',
+      web: 'https://github.com/marcocabrerahdez/Langtons-Ant',
     },
   },
   {
@@ -47,12 +47,12 @@ export const projects: Project[] = [
     description: `The problem that arises is the search for an optimal path for a taxi that starts from an initial point A to a final point B. To do this, the search algorithm A* has been implemented, which builds different routes from the initial point to find one that reaches the end point. Finally, it has been concluded that depending on the heuristic function used, the solution will be optimal.`,
     shortDescription:
       'Implementation of search strategies for the determination of optimal trajectories for autonomous taxis.',
-    repository: 'https://github.com/alu0101327372/A-Star-Search',
+    repository: 'https://github.com/marcocabrerahdez/A-Star-Search',
     stack: [
       Stack.cplusplus,
     ],
     deployment: {
-      web: 'https://github.com/alu0101327372/A-Star-Search',
+      web: 'https://github.com/marcocabrerahdez/A-Star-Search',
     },
   },
 ];
