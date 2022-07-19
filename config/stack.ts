@@ -3,8 +3,10 @@ import { Colors } from './colors';
 export enum Stack {
   // Languages
   typescript,
+  javascript,
   cplusplus,
   python,
+  prolog,
 
   // Frontend
   react,
@@ -19,12 +21,14 @@ export enum Stack {
 
 export const WorkStack = [
   Stack.typescript,
+  Stack.javascript,
   Stack.cplusplus,
   Stack.react,
   Stack.node,
   Stack.express,
   Stack.python,
   Stack.mongo,
+  Stack.prolog,
 ];
 
 type StackInfoMap = {
@@ -60,5 +64,13 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.mongo]: {
     value: 'MongoDB',
     color: Colors.mongo,
+  },
+  [Stack.prolog]: {
+    value: 'Prolog',
+    color: Colors.prolog,
+  },
+  [Stack.javascript]: {
+    value: 'JavaScript',
+    color: Colors.javascript,
   },
 };

@@ -5,6 +5,7 @@ export const Colors = {
   typescript: '#234A84',
   javascript: '#F7DF1E',
   cplusplus: '#21618C',
+  prolog: '#74283c',
 
   // Frontend
   web: '#2D2D2D',
