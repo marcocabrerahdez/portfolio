@@ -31,8 +31,6 @@ export default function App({ Component, pageProps }: AppProps) {
     <ThemeProvider attribute='class' defaultTheme={siteMetadata.theme}>
       <Head>
         <meta content='width=device-width, initial-scale=1' name='viewport' />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNMJEF4RPY"></script>
-        <script></script>
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
