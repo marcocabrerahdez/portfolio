@@ -19,6 +19,8 @@ import { ClientReload } from '@/components/ClientReload';
 import LayoutWrapper from '@/components/LayoutWrapper';
 import siteMetadata from '@/data/siteMetadata';
 
+import Analytics from '@/components/analytics';
+
 import { GeistProvider } from '@geist-ui/core';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
@@ -29,8 +31,11 @@ export default function App({ Component, pageProps }: AppProps) {
     <ThemeProvider attribute='class' defaultTheme={siteMetadata.theme}>
       <Head>
         <meta content='width=device-width, initial-scale=1' name='viewport' />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNMJEF4RPY"></script>
+        <script></script>
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
+      <Analytics />
       <GeistProviderWithTheme>
         <LayoutWrapper>
           <Component {...pageProps} />

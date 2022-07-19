@@ -15,6 +15,12 @@ const siteMetadata = {
   twitter: 'https://twitter.com/marcocabreraa_',
   linkedin: 'https://www.linkedin.com/in/marcocabrerahdez/',
   locale: 'en-US',
+  analytics: {
+    // If you want to use an analytics provider you have to add it to the
+    // content security policy in the `next.config.js` file.
+    // supports plausible, simpleAnalytics, umami or googleAnalytics
+    googleAnalyticsId: 'G-VNMJEF4RPY', // e.g. UA-000000-2 or G-XXXXXXX
+  },
 };
 
-module.exports = siteMetadata;
+export default siteMetadata;
