@@ -70,13 +70,13 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
               </h2>
               <div className='container py-2'>
                 <div className='max-w-full'>
-                  {config.education.map(({ slug, title, banner, description, href }) => (
+                  {config.education.map(({ slug, title, banner, description, date }) => (
                     <Box
                       key={slug}
                       title={title}
                       description={description}
                       banner={banner}
-                      href={href}
+                      date={date}
                     />
                   ))}
                 </div>

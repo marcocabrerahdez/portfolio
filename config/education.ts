@@ -3,7 +3,7 @@ export interface Education {
   title: string;
   banner: string;
   description: string;
-  href: string;
+  date: [number, number];
 }
 
 export const education: Education[] = [
@@ -12,6 +12,6 @@ export const education: Education[] = [
     title: 'La Laguna University',
     banner: '/static/icono.png',
     description: 'Degree in Computer Science',
-    href: 'https://www.ull.es/',
+    date: [2019, new Date().getFullYear()],
   }
 ];
