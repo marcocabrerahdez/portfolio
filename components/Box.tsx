@@ -26,7 +26,7 @@ function Box({ title, description, banner, date }): React.ReactElement {
           </p>
         </div>
         <div className="p-2 mt-2 text-slate-500">
-          {date[0]}-{date[1]}
+          {date[0]} - {date[1]}
         </div>
       </div>
     </div>
