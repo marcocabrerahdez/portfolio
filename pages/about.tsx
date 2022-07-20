@@ -3,6 +3,8 @@ import { Animate } from '@/components/Animate';
 import { getFileBySlug } from '@/lib/mdx';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
+import Box from '@/components/Box';
+import config from 'config';
 
 const DEFAULT_LAYOUT = 'AuthorLayout';
 
@@ -23,18 +25,20 @@ export default function About({
   const { mdxSource, frontMatter } = authorDetails;
 
   return (
-    <Animate
-    as="h1"
-    animation={{
-      opacity: [0, 1],
-      scale: [0.75, 1],
-    }}
-    >
-      <MDXLayoutRenderer
-        layout={frontMatter.layout || DEFAULT_LAYOUT}
-        mdxSource={mdxSource}
-        frontMatter={frontMatter}
-      />
-    </Animate>
+    <>
+      <Animate
+      as="h1"
+      animation={{
+        opacity: [0, 1],
+        scale: [0.75, 1],
+      }}
+      >
+        <MDXLayoutRenderer
+          layout={frontMatter.layout || DEFAULT_LAYOUT}
+          mdxSource={mdxSource}
+          frontMatter={frontMatter}
+        />
+      </Animate>
+    </>
   );
 }

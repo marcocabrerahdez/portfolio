@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { ReactNode } from 'react';
 import { RoughNotation } from 'react-rough-notation';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
+import config from 'config';
+import Box from '@/components/Box';
 
 interface Props {
   children: ReactNode;
@@ -37,7 +39,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
             <div className='text-gray-500 dark:text-gray-400'>{company}</div>
           </div>
 
-          <div className='prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2'>
+          <div className='prose max-w-none pt-8 dark:prose-dark xl:col-span-2'>
             {children}
             <p className='mt-8'>
               <a
@@ -62,6 +64,24 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
               </h2>
               <StackList stack={WorkStack} />
             </p>
+            <div className='mt-8'>
+              <h2 className='mt-8 text-2xl font-semibold dark:text-white'>
+                  Education
+              </h2>
+              <div className='container py-2'>
+                <div className='max-w-full'>
+                  {config.education.map(({ slug, title, banner, description, href }) => (
+                    <Box
+                      key={slug}
+                      title={title}
+                      description={description}
+                      banner={banner}
+                      href={href}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
