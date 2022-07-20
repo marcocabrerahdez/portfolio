@@ -38,7 +38,7 @@ function Card({ title, description, banner, href, stack }): React.ReactElement {
               title
             )}
           </h2>
-          <p className='prose mb-3 max-w-none text-gray-500 line-clamp-2 dark:text-gray-400'>
+          <p className='prose mb-3 max-w-none text-gray-500 dark:text-gray-400'>
             {description}
           </p>
           <StackList stack={stack} />

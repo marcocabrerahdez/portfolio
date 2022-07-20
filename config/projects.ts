@@ -28,8 +28,7 @@ export const projects: Project[] = [
     banner: '/static/projects/development-of-computer-systems/banner.jpg',
     website: '',
     description: ``,
-    shortDescription:
-      'Evaluations of the university subject Development of computer systems.',
+    shortDescription: 'Evaluations of the university subject Development of computer systems.',
     repository: 'https://github.com/marcocabrerahdez/DCS',
     stack: [
       Stack.typescript,
@@ -46,8 +45,7 @@ export const projects: Project[] = [
     banner: '/static/projects/criptography-algorithms/banner.jpg',
     website: '',
     description: ``,
-    shortDescription:
-      'Implementation of criptography algorithms for the encryption and decryption of messages.',
+    shortDescription: 'Implementation of criptography algorithms for the encryption and decryption of messages.',
     repository: 'https://github.com/marcocabrerahdez/SCS',
     stack: [
       Stack.cplusplus,
@@ -64,8 +62,7 @@ export const projects: Project[] = [
     website: '',
     banner: '/static/projects/langtons-ant/banner.jpg',
     description: '',
-    shortDescription:
-      'A two-dimensional universal Turing machine with a very simple set of rules but complex emergent behavior.',
+    shortDescription: 'A two-dimensional universal Turing machine with a very simple set of rules but complex emergent behavior.',
     repository: 'https://github.com/marcocabrerahdez/Langtons-Ant',
     stack: [
       Stack.cplusplus,
@@ -80,8 +77,7 @@ export const projects: Project[] = [
     banner: '/static/projects/a-star-search/banner.jpg',
     website: '',
     description: ``,
-    shortDescription:
-      'Implementation of search strategies for the determination of optimal trajectories.',
+    shortDescription: 'Implementation of search strategies for the determination of optimal trajectories.',
     repository: 'https://github.com/marcocabrerahdez/A-Star-Search',
     stack: [
       Stack.cplusplus,
@@ -96,8 +92,7 @@ export const projects: Project[] = [
     banner: '/static/projects/knowledge-representation/banner.jpg',
     website: '',
     description: ``,
-    shortDescription:
-      'Building a knowledge-based game using Prolog.',
+    shortDescription: 'Building a knowledge-based game using Prolog.',
     repository: 'https://github.com/marcocabrerahdez/Knowledge-Representation',
     stack: [
       Stack.prolog,
@@ -112,8 +107,7 @@ export const projects: Project[] = [
     banner: '/static/projects/human-computer-interaction-systems/banner.jpg',
     website: '',
     description: ``,
-    shortDescription:
-      'Building a knowledge-based game using Prolog.',
+    shortDescription: 'Creating two Alexa skills and a gesture recognition system.',
     repository: 'https://github.com/marcocabrerahdez/HCIS',
     stack: [
       Stack.javascript,
