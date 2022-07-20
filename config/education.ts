@@ -9,9 +9,16 @@ export interface Education {
 export const education: Education[] = [
   {
     slug: 'computer-science',
-    title: 'La Laguna University',
-    banner: '/static/icono.png',
-    description: 'Degree in Computer Science',
-    date: [2019, 2023 === new Date().getFullYear() ? new Date().getFullYear()  : 'Present'],
+    title: 'Degree in Computer Science',
+    banner: '/static/education/computer-science/icono.png',
+    description: 'La Laguna University',
+    date: [2019, 2023 === new Date().getFullYear() ? 2022  : 'Present'],
+  },
+  {
+    slug: 'computer-course',
+    title: 'Digital Competence Course',
+    banner: '/static/education/computer-course/icono.png',
+    description: 'La Laguna University',
+    date: [2019, 2020],
   }
 ];
