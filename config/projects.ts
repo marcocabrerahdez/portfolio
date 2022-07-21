@@ -23,20 +23,21 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Development of computer systems',
-    slug: 'development-of-computer-systems',
-    banner: '/static/projects/development-of-computer-systems/banner.jpg',
+    title: 'API Rest for music information management',
+    slug: 'api-rest',
+    banner: '/static/projects/api-rest/banner.jpg',
     website: '',
     description: ``,
-    shortDescription: 'Evaluations of the university subject Development of computer systems.',
-    repository: 'https://github.com/marcocabrerahdez/DCS',
+    shortDescription: 'In this API, we make use of different tools that allows us to perform CRUD operations on songs, artists and playlists.',
+    repository: 'https://github.com/marcocabrerahdez/Api-Rest',
     stack: [
       Stack.typescript,
       Stack.node,
       Stack.express,
+      Stack.mongo,
     ],
     deployment: {
-      web: 'https://github.com/marcocabrerahdez/DCS',
+      web: 'https://github.com/marcocabrerahdez/Api-Rest',
     },
   },
   {
