@@ -108,7 +108,7 @@ export const projects: Project[] = [
     banner: '/static/projects/human-computer-interaction-systems/banner.jpg',
     website: '',
     description: ``,
-    shortDescription: 'Creating two Alexa skills and a gesture recognition system.',
+    shortDescription: 'Development of two Alexa skills and a small gesture recognition system.',
     repository: 'https://github.com/marcocabrerahdez/HCIS',
     stack: [
       Stack.javascript,
