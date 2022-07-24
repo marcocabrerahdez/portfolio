@@ -6,6 +6,8 @@ export const Colors = {
   javascript: '#F7DF1E',
   cplusplus: '#21618C',
   prolog: '#74283c',
+  html: '#FF8000',
+  ruby: '#CC342D',
 
   // Frontend
   web: '#2D2D2D',
@@ -23,6 +25,10 @@ export const Colors = {
   babel: '#F5DB53',
   redux: '#764ABC',
 
+  // Hosting
+  heroku: '#79589F',
+  vercel: '#000000',
+
   // Mobile
   reactnative: '#2D2D2D',
   android: '#56A036',
@@ -33,6 +39,7 @@ export const Colors = {
   postgres: '#336791',
   mongo: '#4DB33D',
   redis: '#D82C20',
+  sql: '#3b7087',
 
   // Cloud
   aws: '#FF9900',
@@ -55,14 +62,7 @@ export const Colors = {
 
   // Misc.
   git: '#F1502F',
-  microservices: '#1890ff',
-  distributedsystems: '#404040',
-  discuss: '#404040',
-  testing: '#049C64',
-  backend: '#404040',
-  devops: '#059F00',
-  serverless: '#000000',
-  resume: '#EEEBFF',
-  opensource: '#26BE00',
-  tutorial: '#4dd0e1',
+
+  // Testing
+  mocha: '#8d6748'
 };

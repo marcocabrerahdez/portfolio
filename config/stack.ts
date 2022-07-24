@@ -5,11 +5,14 @@ export enum Stack {
   typescript,
   javascript,
   cplusplus,
+  ruby,
   python,
   prolog,
+  html,
 
   // Frontend
   react,
+  nextjs,
 
   // Backend
   node,
@@ -17,18 +20,37 @@ export enum Stack {
 
   // Database
   mongo,
+  sql,
+
+  // Hosting
+  heroku,
+  vercel,
+
+  // Version Control
+  git,
+
+  // Testing
+  mocha,
 }
 
 export const WorkStack = [
   Stack.typescript,
   Stack.javascript,
   Stack.cplusplus,
+  Stack.ruby,
   Stack.react,
+  Stack.nextjs,
   Stack.node,
   Stack.express,
   Stack.python,
   Stack.mongo,
+  Stack.sql,
   Stack.prolog,
+  Stack.heroku,
+  Stack.vercel,
+  Stack.git,
+  Stack.html,
+  Stack.mocha,
 ];
 
 type StackInfoMap = {
@@ -41,13 +63,37 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
     value: 'TypeScript',
     color: Colors.typescript,
   },
+  [Stack.javascript]: {
+    value: 'JavaScript',
+    color: Colors.javascript,
+  },
   [Stack.cplusplus]: {
     value: 'C++',
     color: Colors.cplusplus,
   },
+  [Stack.ruby]: {
+    value: 'Ruby',
+    color: Colors.ruby,
+  },
+  [Stack.html]: {
+    value: 'HTML',
+    color: Colors.html,
+  },
+  [Stack.python]: {
+    value: 'Python',
+    color: Colors.python,
+  },
+  [Stack.prolog]: {
+    value: 'Prolog',
+    color: Colors.prolog,
+  },
   [Stack.react]: {
     value: 'React',
     color: Colors.react,
+  },
+  [Stack.nextjs]: {
+    value: 'NextJS',
+    color: Colors.nextjs,
   },
   [Stack.node]: {
     value: 'Node',
@@ -57,20 +103,28 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
     value: 'Express',
     color: Colors.express,
   },
-  [Stack.python]: {
-    value: 'Python',
-    color: Colors.python,
-  },
   [Stack.mongo]: {
     value: 'MongoDB',
     color: Colors.mongo,
   },
-  [Stack.prolog]: {
-    value: 'Prolog',
-    color: Colors.prolog,
+  [Stack.sql]: {
+    value: 'SQL',
+    color: Colors.sql,
   },
-  [Stack.javascript]: {
-    value: 'JavaScript',
-    color: Colors.javascript,
+  [Stack.heroku]: {
+    value: 'Heroku',
+    color: Colors.heroku,
+  },
+  [Stack.vercel]: {
+    value: 'Vercel',
+    color: Colors.vercel,
+  },
+  [Stack.git]: {
+    value: 'Git',
+    color: Colors.git,
+  },
+  [Stack.mocha]: {
+    value: 'Mocha',
+    color: Colors.mocha,
   },
 };
