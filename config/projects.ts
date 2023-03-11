@@ -23,7 +23,22 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'API Rest for music information management',
+    title: 'Final Degree Project',
+    slug: 'final-degree-project',
+    banner: '/static/projects/final-degree-project/banner.jpeg',
+    website: '',
+    description: ``,
+    shortDescription: 'Machine Learning as an alternative to simulation models for decision making in prediction of comorbidities caused by diabetes',
+    repository: 'https://github.com/marcocabrerahdez/TFG',
+    stack: [
+      Stack.python,
+    ],
+    deployment: {
+      web: 'https://github.com/marcocabrerahdez/TFG',
+    },
+  },
+  {
+    title: 'Rest API for music information management',
     slug: 'api-rest',
     banner: '/static/projects/api-rest/banner.jpg',
     website: '',

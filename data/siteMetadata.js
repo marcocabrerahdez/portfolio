@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://portfolio-marcocabrerahdez.vercel.app',
   siteRepo: 'hhttps://github.com/marcocabrerahdez/portfolio',
   siteLogo: '/static/images/logo.png',
-  image: '/static/avatar.jpg',
+  image: '/static/avatar.JPG',
   email: 'marco.cabrerahdez@gmail.com',
   github: 'https://github.com/marcocabrerahdez',
   twitter: 'https://twitter.com/marcocabreraa_',

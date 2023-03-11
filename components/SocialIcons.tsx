@@ -7,10 +7,9 @@ import { FaLinkedinIn as LinkedinIcon } from 'react-icons/fa';
 import {
   IoLogoGithub as GithubIcon,
   IoLogoTwitter as TwitterIcon,
-} from 'react-icons/io';
-import {
-  SiGmail as MailIcon,
-} from 'react-icons/si';
+  IoMailOutline as MailIcon,
+} from 'react-icons/io5';
+
 import { Maybe, Tuple } from 'types';
 
 interface SocialIconsProps {

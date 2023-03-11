@@ -3,8 +3,6 @@ import { Animate } from '@/components/Animate';
 import { getFileBySlug } from '@/lib/mdx';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
-import Box from '@/components/Box';
-import config from 'config';
 
 const DEFAULT_LAYOUT = 'AuthorLayout';
 

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-function Box({ title, description, banner, date }): React.ReactElement {
+function Box({ title, description, banner }): React.ReactElement {
   const image = (
     <Image
       alt={title}
@@ -17,16 +17,13 @@ function Box({ title, description, banner, date }): React.ReactElement {
         <div className="p-6 flex place-items-center md:shrink-0">
           {image}
         </div>
-        <div className="p-6">
+        <div className="w-full p-6">
           <div className="uppercase tracking-wide text-sm text-neutral-50 font-semibold">
             {title}
           </div>
-          <p className="mt-2 text-slate-500">
+          <div className="mt-2 text-slate-500">
             {description}
-          </p>
-        </div>
-        <div className="p-2 mt-3 text-slate-500">
-          {date[0]} - {date[1]}
+          </div>
         </div>
       </div>
     </div>
