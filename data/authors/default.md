@@ -4,7 +4,7 @@ shortname: Marco
 avatar: /static/avatar.jpg
 occupation: Computer Science Student
 company: La Laguna University
-resume: https://drive.google.com/file/d/1mMtsKmuiuR3VYILE2GApYKZOJ-5s_3fp/view?usp=sharing
+resume: https://drive.google.com/file/d/1n2S_DEXHWLJf1HEgvyteX-CMf3dSC7yL/view?usp=share_link
 email: marco.cabrerahdez@gmail.com
 twitter: https://twitter.com/marcocabreraa_
 linkedin: https://www.linkedin.com/in/marcocabrerahdez/
