@@ -8,17 +8,20 @@ export const Colors = {
   prolog: '#74283c',
   html: '#FF8000',
   ruby: '#CC342D',
+  java: '#007396',
 
   // Frontend
   web: '#2D2D2D',
   react: '#61DAF6',
   nextjs: '#000000',
+  vue3: '#4FC08D',
 
   // Backend
   graphql: '#E535AB',
   node: '#68A063',
   express: '#52BE80',
   django: '#092E20',
+  springboot: '#6DB33F',
 
   // Tools, Libs
   webpack: '#8DD6F9',
@@ -36,7 +39,7 @@ export const Colors = {
 
   // Databases
   arangodb: '#68A063',
-  postgres: '#336791',
+  postgresql: '#336791',
   mongo: '#4DB33D',
   redis: '#D82C20',
   sql: '#3b7087',
@@ -62,7 +65,4 @@ export const Colors = {
 
   // Misc.
   git: '#F1502F',
-
-  // Testing
-  mocha: '#8d6748'
 };

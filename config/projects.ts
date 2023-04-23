@@ -38,6 +38,25 @@ export const projects: Project[] = [
     },
   },
   {
+    title: 'AlPanPan',
+    slug: 'alpanpan',
+    banner: '/static/projects/alpanpan/banner.jpg',
+    website: '',
+    description: ``,
+    shortDescription: 'Fullstack application for the online sale of bread',
+    repository: 'https://github.com/marcocabrerahdez/alPanPan',
+    stack: [
+      Stack.typescript,
+      Stack.react,
+      Stack.node,
+      Stack.mongo,
+      Stack.vercel,
+    ],
+    deployment: {
+      web: 'https://github.com/marcocabrerahdez/alPanPan',
+    },
+  },
+  {
     title: 'Rest API for music information management',
     slug: 'api-rest',
     banner: '/static/projects/api-rest/banner.jpg',

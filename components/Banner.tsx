@@ -17,7 +17,7 @@ function Banner(props: BannerProps): React.ReactElement {
         {frontMatter.occupation}
       </p>
       <p className='font-light lg:text-xl'>
-        I am a passionate student of Computer Science. I create amazing web applications to make the internet a better place.
+        I am a Computer Engineer passionate about delivering high quality work, solving complex problems and contributing to the success of the team. I have skills in web development and experience in machine learning.
       </p>
     </div>
   );

@@ -8,19 +8,22 @@ export enum Stack {
   ruby,
   python,
   prolog,
-  html,
+  java,
 
   // Frontend
   react,
   nextjs,
+  vue3,
 
   // Backend
   node,
   express,
+  springboot,
 
   // Database
   mongo,
   sql,
+  postgresql,
 
   // Hosting
   heroku,
@@ -28,9 +31,6 @@ export enum Stack {
 
   // Version Control
   git,
-
-  // Testing
-  mocha,
 }
 
 export const WorkStack = [
@@ -49,8 +49,10 @@ export const WorkStack = [
   Stack.heroku,
   Stack.vercel,
   Stack.git,
-  Stack.html,
-  Stack.mocha,
+  Stack.java,
+  Stack.postgresql,
+  Stack.vue3,
+  Stack.springboot
 ];
 
 type StackInfoMap = {
@@ -74,10 +76,6 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.ruby]: {
     value: 'Ruby',
     color: Colors.ruby,
-  },
-  [Stack.html]: {
-    value: 'HTML',
-    color: Colors.html,
   },
   [Stack.python]: {
     value: 'Python',
@@ -123,8 +121,20 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
     value: 'Git',
     color: Colors.git,
   },
-  [Stack.mocha]: {
-    value: 'Mocha',
-    color: Colors.mocha,
+  [Stack.java]: {
+    value: 'Java',
+    color: Colors.java,
   },
+  [Stack.postgresql]: {
+    value: 'PostgreSQL',
+    color: Colors.postgresql,
+  },
+  [Stack.vue3]: {
+    value: 'Vue',
+    color: Colors.vue3,
+  },
+  [Stack.springboot]: {
+    value: 'Spring Boot',
+    color: Colors.springboot,
+  }
 };

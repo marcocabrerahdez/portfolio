@@ -7,14 +7,8 @@ export interface Education {
 
 export const education: Education[] = [
   {
-    slug: 'kaudal-trainee',
-    title: 'Trainee in Applications Development',
-    banner: '/static/education/kaudal-trainee/icono.png',
-    description: 'Kaudal',
-  },
-  {
     slug: 'computer-science',
-    title: 'Degree in Computer Science',
+    title: 'Degree in Computer Engineering',
     banner: '/static/education/computer-science/icono.png',
     description: 'La Laguna University',
   },

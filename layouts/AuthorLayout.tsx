@@ -38,7 +38,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
             <div className='text-gray-500 dark:text-gray-400'>{company}</div>
           </div>
 
-          <div className='prose max-w-none pt-8 dark:prose-dark xl:col-span-2'>
+          <div className='prose max-w-none py-8 dark:prose-dark xl:col-span-2'>
             {children}
             <p className='mt-8'>
               <a
@@ -49,7 +49,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
               >
                 <RoughNotation
                   show
-                  type='box'
+                  type='underline'
                   animationDelay={250}
                   animationDuration={2000}
                   strokeWidth={2}
@@ -58,13 +58,31 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                   Resume
                 </RoughNotation>
               </a>
-              <h2 className='mt-8 mb-4 text-2xl font-semibold dark:text-white'>
+              <h2 className='mb-4 text-2xl font-semibold dark:text-white'>
                 Skills
               </h2>
               <StackList stack={WorkStack} />
             </p>
-            <div className='mt-8'>
-              <h2 className='mt-8 text-2xl font-semibold dark:text-white'>
+
+            <div className='mt-4'>
+              <h2 className='mt-4 text-2xl font-semibold dark:text-white'>
+                  Experience
+              </h2>
+              <div className='container py-2'>
+                <div className='max-w-full'>
+                  {config.experience.map(({ slug, title, banner, description }) => (
+                    <Box
+                      key={slug}
+                      title={title}
+                      description={description}
+                      banner={banner}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className='mt-4'>
+              <h2 className='mt-4 text-2xl font-semibold dark:text-white'>
                   Education
               </h2>
               <div className='container py-2'>
