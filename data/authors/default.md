@@ -4,7 +4,7 @@ shortname: Marco
 avatar: /static/avatar.jpg
 occupation: Application Developer
 company: Kaudal
-resume: https://drive.google.com/file/d/1n2S_DEXHWLJf1HEgvyteX-CMf3dSC7yL/view?usp=share_link
+resume: https://drive.google.com/file/d/1GdpAeDzeGXDjwQeEU7eQxizopF-wlEdG/view?usp=sharing
 email: marco.cabrerahdez@gmail.com
 twitter: https://twitter.com/marcocabreraa_
 linkedin: https://www.linkedin.com/in/marcocabrerahdez/
