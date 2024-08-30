@@ -10,7 +10,7 @@ function Footer() {
           <div className="absolute top-0 h-[1px] w-1/2  bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <p className="text-sm">© Copyright ${currentYear}</p>
+          <p className="text-sm">Marco Cabrera © Copyright {currentYear}</p>
         </div>
       </div>
     </div>

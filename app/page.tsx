@@ -1,7 +1,11 @@
+import Home from './components/home';
 import Experience from './components/experience';
 
-export default function Home() {
-  <>
-    <Experience />
-  </>;
+export default function Page() {
+  return (
+    <>
+      <Home />
+      <Experience />
+    </>
+  );
 }
