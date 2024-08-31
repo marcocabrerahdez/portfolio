@@ -1,49 +1,69 @@
-// @flow strict
-
 import GlowCard from '../helper/glow-card';
-import Link from 'next/link';
-import Image from 'next/image';
+import { experiences } from '../../../utils/constants';
 
 function Experience() {
   return (
-    <section className="w-full py-4 md:py-8 lg:py-16 bg-muted">
-      <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Featured Projects</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Check out some of my latest and greatest projects that showcase my skills and expertise.</p>
-          </div>
-        </div>
-        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-          <GlowCard identifier="diabetes">
-            <div className="p-6">
-              <div className="mb-4">
-                <h3 className="text-xl font-bold">Enhancing decisions with surrogate models</h3>
-                <p className="text-justify">Computerized clinical decision support systems (CDSS) that integrate the latest scientific evidence are crucial for improving patient care quality. This case study on Type 1 Diabetes Mellitus (T1DM) demonstrates the development of machine learning (ML) based surrogate models derived from health technology assessment models. These surrogate models replace complex simulation models, enabling real-time applications and simulation-in-the-loop optimization. The study details the creation of datasets for training and testing and compares various ML techniques. With an Intersection over Union (IoU) score above 0.9, these surrogate models provide a faster alternative for integration into CDSS.</p>
-              </div>
+    <section className="w-full py-8 flex justify-center">
+      <div className="container mx-auto px-4 flex flex-col items-center">
+        <h2 className="text-3xl font-bold text-center mb-8">My Experience</h2>
+        <div className="relative w-full">
+          {/* Línea temporal */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-gray-300"></div>
 
-              <Image src="/diabetes.webp" alt="Project 1" className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full" width={550} height={310} />
-              <div className="mt-4 text-center">
-                <Link href="https://github.com/marcocabrerahdez/TFG" className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50" prefetch={false}>
-                  View Project
-                </Link>
-              </div>
+          {experiences.map((exp, index) => (
+            <div key={exp.id} className="mb-8 w-full flex items-center relative">
+              {/* Punto en la línea temporal */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 bg-secondary rounded-full h-4 w-4 border-2 border-white"></div>
+
+              {index % 2 === 0 ? (
+                <>
+                  {/* Fecha a la izquierda */}
+                  <div className="w-1/2 text-right pr-8">
+                    <span className="text-gray-400 text-sm">{exp.date}</span>
+                  </div>
+                  {/* Tarjeta a la derecha */}
+                  <div className="w-1/2 pl-8">
+                    <GlowCard identifier={exp.id.toString()}>
+                      <div className="p-6">
+                        <h3 className="text-xl font-semibold">{exp.title}</h3>
+                        <p className="text-gray-300">{exp.company}</p>
+                        <ul className="mt-2 text-gray-400 list-arrow list-inside">
+                          {exp.description.map((item, idx) => (
+                            <li key={idx} className="text-justify mb-2">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </GlowCard>
+                  </div>
+                </>
+              ) : (
+                <>
+                  {/* Tarjeta a la izquierda */}
+                  <div className="w-1/2 pr-8">
+                    <GlowCard identifier={exp.id.toString()}>
+                      <div className="p-6">
+                        <h3 className="text-xl font-semibold">{exp.title}</h3>
+                        <p className="text-gray-300">{exp.company}</p>
+                        <ul className="mt-2 text-gray-400 list-arrow list-inside">
+                          {exp.description.map((item, idx) => (
+                            <li key={idx} className="text-justify mb-2">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </GlowCard>
+                  </div>
+                  {/* Fecha a la derecha */}
+                  <div className="w-1/2 text-left pl-8">
+                    <span className="text-gray-400 text-sm">{exp.date}</span>
+                  </div>
+                </>
+              )}
             </div>
-          </GlowCard>
-          <GlowCard identifier="ftp-server">
-            <div className="p-6">
-              <div className="mb-4">
-                <h3 className="text-xl font-bold">FTP Server build on C++</h3>
-                <p className="text-justify">This project involves developing a File Transfer Protocol (FTP) server using C++. It focuses on creating a robust and efficient system for transferring files between clients and servers. Key features include handling multiple connections, implementing standard FTP commands such as 'get' and 'put,' and ensuring secure data transfer. The project emphasizes the use of C++ for its performance and reliability in managing network operations. The resulting FTP server is designed to be both powerful and user-friendly, with a clean and modern architecture that ensures high performance and ease of use in various applications.</p>
-              </div>
-              <Image src="/ftp-server.webp" alt="Project 2" className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full" width={550} height={310} />
-              <div className="mt-4 text-center">
-                <Link href="#" className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50" prefetch={false}>
-                  View Project
-                </Link>
-              </div>
-            </div>
-          </GlowCard>
+          ))}
         </div>
       </div>
     </section>

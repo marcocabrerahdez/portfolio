@@ -5,7 +5,7 @@ import './css/card.scss';
 import './css/globals.scss';
 import Footer from './components/footer';
 import Home from './components/home';
-import Experience from './components/experience';
+import Experience from './components/projects';
 
 const inter = Inter({ subsets: ['latin'] });
 
