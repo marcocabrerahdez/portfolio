@@ -30,6 +30,14 @@ export const experiences = [
 
 export const projects = [
   {
+    id: 'moodle',
+    title: 'Moodle Platform for Hacienda Academy',
+    description: 'Developed and deployed a Moodle platform on AWS for a civil service exam academy. Utilized EC2, S3, and RDS to ensure scalability and security. Customized Moodle to meet specific educational needs, implementing automated notifications and backups. Applied AWS security best practices, improving platform reliability and user experience.',
+    imageSrc: '/moodle.webp',
+    imageAlt: 'Moodle Project',
+    linkHref: 'https://www.tribuconta.com/'
+  },
+  {
     id: "diabetes",
     title: "Enhancing decisions with surrogate models",
     description: "This project demonstrates the creation of machine learning surrogate models to optimize clinical decision support systems for Type 1 Diabetes Mellitus (T1DM). Surrogate models accelerate real-time applications by replacing complex simulation models. The study compares various ML techniques, achieving an IoU score above 0.9 for high-performance integrations in clinical decision support systems.",
