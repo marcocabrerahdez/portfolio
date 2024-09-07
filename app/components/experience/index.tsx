@@ -3,7 +3,7 @@ import { experiences } from '../../../utils/constants';
 
 function Experience() {
   return (
-    <section className="w-full py-8 flex justify-center">
+    <section className="w-full py-8 flex justify-center relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <div className="container mx-auto px-4 flex flex-col items-center">
         <h2 className="text-3xl font-bold text-center mb-8">My Experience</h2>
         <div className="relative w-full">
