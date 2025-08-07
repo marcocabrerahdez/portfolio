@@ -6,15 +6,13 @@ import matter from 'gray-matter';
 const POSTS_PATH = path.join(process.cwd(), 'app/posts');
 
 export async function generateStaticParams() {
-  const files = fs.readdirSync(POSTS_PATH);
-  return files.map((file) => ({
+  return fs.readdirSync(POSTS_PATH).map((file) => ({
     slug: file.replace(/\.mdx$/, ''),
   }));
 }
 
 const PostPage = async ({ params }: { params: { slug: string } }) => {
   const filePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
-
   if (!fs.existsSync(filePath)) return notFound();
 
   const source = fs.readFileSync(filePath, 'utf8');
@@ -24,21 +22,19 @@ const PostPage = async ({ params }: { params: { slug: string } }) => {
 
   return (
     <article className="max-w-3xl mx-auto px-6 py-16">
-      <h1 className="text-3xl font-bold text-white mb-2">{data.title}</h1>
       <p className="text-gray-400 text-sm mb-6">
-        {typeof data.date === 'string'
-          ? data.date
-          : new Date(data.date).toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'short',
-              day: 'numeric',
-            })}
+        {new Date(data.date).toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+        })}
       </p>
+
       <div className="prose prose-invert max-w-none">
         <Content />
       </div>
     </article>
   );
-};
+}
 
 export default PostPage;

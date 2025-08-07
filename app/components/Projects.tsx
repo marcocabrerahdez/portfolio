@@ -10,13 +10,6 @@ const projects = [
     link: 'https://github.com/marcocabrerahdez',
   },
   {
-    title: 'MLOps Feature Store',
-    description:
-      'Designed a centralized feature store using Feast and Redis to improve real-time inference by 30%.',
-    tags: ['Feast', 'Redis', 'MLOps'],
-    link: '',
-  },
-  {
     title: 'Scientific Publication: Surrogate Models for T1DM',
     description:
       'Co-authored a peer-reviewed paper on replacing complex HTA models with surrogate machine learning models for clinical decision support in type 1 diabetes mellitus.',

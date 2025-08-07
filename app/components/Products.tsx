@@ -15,7 +15,7 @@ const products = [
     description:
       'Quick and practical ebook on how to launch your first AI-powered digital product in under 7 days. Ideal for creators and indie hackers.',
     link: 'https://marcocabrerahdez.gumroad.com/l/hycce',
-    image: '/mini-guide.webp', // 👉 deberás subir este archivo tú
+    image: '/mini-guide.webp',
   },
 ];
 
