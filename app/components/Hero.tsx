@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   FaGithub,
   FaLinkedin,
@@ -39,35 +40,35 @@ const Hero = () => {
         Co-author of AI healthcare research published in Computer Methods and Programs in Biomedicine. Building systems from RAG to CNNs for defect detection.
       </p>
 
-      <a
+      <Link
         href="#projects"
         className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition"
       >
         See My Work
-      </a>
+      </Link>
 
       <div className="flex gap-5 mt-6 text-white text-2xl">
-        <a href="https://github.com/marcocabrerahdez" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
+        <Link href="https://github.com/marcocabrerahdez" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
           <FaGithub />
-        </a>
-        <a href="https://linkedin.com/in/marcocabrerahdez" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
+        </Link>
+        <Link href="https://linkedin.com/in/marcocabrerahdez" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
           <FaLinkedin />
-        </a>
-        <a href="https://x.com/marcocabrerahdez" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
+        </Link>
+        <Link href="https://x.com/marcocabrerahdez" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
           <FaXTwitter />
-        </a>
-        <a href="https://marcocabrerahdez.gumroad.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
+        </Link>
+        <Link href="https://marcocabrerahdez.gumroad.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
           <SiGumroad />
-        </a>
-        <a href="https://dev.to/marcocabrerahdez" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
+        </Link>
+        <Link href="https://dev.to/marcocabrerahdez" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
           <FaDev />
-        </a>
-        <a href="https://app.daily.dev/marcocabrera" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
+        </Link>
+        <Link href="https://app.daily.dev/marcocabrera" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
           <SiDailydotdev />
-        </a>
-        <a href="https://www.indiehackers.com/marcocabera" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
+        </Link>
+        <Link href="https://www.indiehackers.com/marcocabera" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
           <SiIndiehackers />
-        </a>
+        </Link>
       </div>
     </section>
   );

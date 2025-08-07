@@ -8,10 +8,10 @@ const Navbar = () => {
         <Link href="/" className="text-xl font-bold text-primary">Marco Cabrera</Link>
         <ul className="flex gap-6 text-sm text-gray-300">
           <li>
-            <a href="/#projects" className="hover:text-white transition">Projects</a>
+            <Link href="/#projects" className="hover:text-white transition">Projects</Link>
           </li>
           <li>
-            <a href="/#products" className="hover:text-white transition">Products</a>
+            <Link href="/#products" className="hover:text-white transition">Products</Link>
           </li>
           <li>
             <Link href="/blog" className="hover:text-white transition">Blog</Link>

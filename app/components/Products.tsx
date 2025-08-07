@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const products = [
   {
@@ -41,13 +42,13 @@ const Products = () => {
             />
             <h3 className="text-xl font-semibold text-white mb-2">{product.title}</h3>
             <p className="text-gray-400 mb-4">{product.description}</p>
-            <a
+            <Link
               href={product.link}
               target="_blank"
               className="bg-primary text-white px-4 py-2 rounded hover:bg-primary/80 transition"
             >
               Get it →
-            </a>
+            </Link>
           </motion.div>
         ))}
       </div>

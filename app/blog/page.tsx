@@ -14,14 +14,19 @@ type PostMeta = {
 
 export default function BlogIndex() {
   const files = fs.readdirSync(POSTS_PATH);
+
   const posts: PostMeta[] = files.map((file) => {
     const slug = file.replace(/\.mdx$/, '');
     const content = fs.readFileSync(path.join(POSTS_PATH, file), 'utf8');
     const { data } = matter(content);
+
     return {
       slug,
       title: data.title,
-      date: typeof data.date === 'string' ? data.date : new Date(data.date).toISOString(),
+      date:
+        typeof data.date === 'string'
+          ? data.date
+          : new Date(data.date).toISOString(),
       summary: data.summary,
     };
   });

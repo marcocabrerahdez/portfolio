@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const projects = [
   {
@@ -41,13 +42,13 @@ const Projects = () => {
               ))}
             </div>
             {project.link && (
-              <a
+              <Link
                 href={project.link}
                 target="_blank"
                 className="text-primary hover:underline text-sm font-medium"
               >
                 View project →
-              </a>
+              </Link>
             )}
           </motion.div>
         ))}
