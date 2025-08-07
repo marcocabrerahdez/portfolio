@@ -1,33 +1,21 @@
-import type { Metadata } from 'next';
+import Navbar from './components/Navbar';
+import './globals.css';
 import { Inter } from 'next/font/google';
-import { ToastContainer } from 'react-toastify';
-import './css/card.scss';
-import './css/globals.scss';
-import Footer from './components/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Marco Cabrera',
-  description: 'Software Engineer',
+export const metadata = {
+  title: 'Marco Cabrera — AI Engineer',
+  description: 'Portfolio and products from Marco Cabrera, focused on AI, MLOps, and digital tools.',
 };
 
-interface RootLayoutProps {
-  children: React.ReactNode;
-}
-
-export default function RootLayout({
-  children,
-}: Readonly<RootLayoutProps>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-background text-white">
       <body className={inter.className}>
-        <ToastContainer />
-        <main className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
-          {children}
-        </main>
-        <Footer />
+        <Navbar />
+        <main className="pt-20">{children}</main>
       </body>
     </html>
-  );
+  )
 }

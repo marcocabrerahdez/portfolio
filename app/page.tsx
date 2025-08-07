@@ -1,17 +1,17 @@
-import Home from './components/home';
-import Experience from './components/experience';
-import Projects from './components/projects';
-import Education from './components/education';
-import Skills from './components/skills';
+import Hero from './components/Hero';
+import Projects from './components/Projects';
+import Products from './components/Products';
+import Feed from './components/Feed';
+import About from './components/About';
 
 export default function Page() {
   return (
     <>
-      <Home />
-      <Experience />
+      <Hero />
+      <About />
       <Projects />
-      <Education />
-      <Skills />
+      <Products />
+      <Feed />
     </>
   );
 }

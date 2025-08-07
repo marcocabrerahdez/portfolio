@@ -3,30 +3,34 @@ export const ABOUTME = 'I’m a passionate and innovative Software Engineer spec
 export const experiences = [
   {
     id: 1,
-    title: 'Software Engineer',
+    title: 'Machine Learning Engineer',
     company: 'Nartex Software',
     date: 'Aug 2023 - Present',
     description: [
-      "Developed a Retriever-Augmented Generator (RAG) solution, using Python, PyTorch, Langchain, and Selenium, reducing paperwork processing time by 75%.",
-      "Participated in migrating a legacy system to a microservices architecture, improving system scalability and reliability while supporting over 5 applications.",
-      "Led the re-engineering of a project migrating from Java and JSP to React and Go, enhancing system response times by 30% and supporting 50% more concurrent users.",
-      "Created a pipeline to automate the creation of monthly incident reports using Selenium web scraping, saving 2 hours of manual work per day.",
-      "Integrated Hugo into the documentation pipeline, increasing the accuracy and timeliness of content updates, leading to a 25% boost in user engagement.",
-      "Implemented CI/CD pipelines for 80% of the company's projects, reducing deployment times by 50% and enhancing collaboration through automated workflows.",
-      "Migrated a legacy Moodle system from 2013, modernizing the platform and improving its functionality.",
-      "Mentored a team member, guiding them through project tasks, code reviews, and best practices to ensure timely and high-quality deliveries."
+      'Spearheaded a Retrieval‑Augmented Generation (RAG) pipeline using Python, Hugging Face Transformers y FAISS para la clasificación de documentos de cumplimiento legal, logrando un 93 % de precisión.',
+      'Diseñó e implementó pipelines ETL de extremo a extremo en Python (Pandas, NumPy) con Apache Airflow para ingerir y transformar 3 millones de registros diarios provenientes de APIs REST y PostgreSQL, alimentando analíticas posteriores.',
+      'Desarrolló una red neuronal convolucional en TensorFlow/Keras para la detección de defectos en control de calidad de fabricación, alcanzando un 94 % de precisión de validación.',
+      'Containerizó microservicios de inferencia con Docker y los desplegó en Kubernetes, reduciendo el tiempo de despliegue en un 60 %.',
+      'Supervisó el rendimiento de modelos utilizando Prometheus y Grafana e implementó desencadenadores de detección de deriva para la re‑entrenamiento automatizado.',
+      'Lideró talleres de MLOps, mentorando a dos ingenieros junior en control de versiones con Git, pipelines CI/CD en Jenkins y gestión de experimentos con MLflow.',
+      'Implementó flujos de optimización de hiperparámetros con Optuna, recortando el tiempo de ajuste en un 40 % y aumentando el rendimiento final en un 5 %.',
+      'Diseñó un almacén de características centralizado utilizando Feast y Redis, reduciendo la latencia de recuperación en un 50 % y mejorando el rendimiento de inferencia en tiempo real en un 30 %.',
+      'Simplificó los procesos de limpieza de datos con Python y expresiones regulares, reduciendo las inconsistencias en un 20 % y mejorando la fiabilidad de las tareas de machine learning posteriores.'
     ],
   },
   {
     id: 2,
-    title: 'Junior Software Engineer',
-    company: 'Kaudal (Arquimea Group)',
-    date: 'Jan 2023 - May 2023',
+    title: 'Junior AI Researcher',
+    company: 'University of La Laguna',
+    date: 'Nov 2022 - Jun 2023',
     description: [
-      "Designed and implemented features for a web application using Java and Vue.js, improving functionality and performance as part of full-stack development experience."
+      'Co‑autor de una publicación sobre sistemas de apoyo a la decisión clínica basados en IA (CDSS), contribuyendo a la investigación en modelos sustitutos para la diabetes tipo 1.',
+      'Desarrolló modelos sustitutos basados en machine learning para reemplazar modelos de simulación complejos, consiguiendo una puntuación IoU superior a 0,9 y garantizando alta precisión en predicciones médicas.',
+      'Diseñó y optimizó un pipeline de analítica predictiva para la toma de decisiones clínicas, permitiendo inferencias en tiempo real y reduciendo la complejidad computacional 2.700 veces respecto a los modelos tradicionales.'
     ],
-  },
+  }
 ];
+
 
 export const projects = [
   {
@@ -71,46 +75,17 @@ export const projects = [
   }
 ];
 
-export const education = [
+export const posts = [
   {
     id: 1,
-    degree: 'Bachelor Degree in Computer Science',
-    institution: 'University of La Laguna',
-    year: '2019 - 2023',
-    logoSrc: '/ull-logo.png',
-    logoAlt: 'University of La Laguna Logo'
-  },
-  {
-    id: 2,
-    degree: 'Angular From The Basics To Advanced',
-    institution: 'Udemy',
-    year: '2023',
-    logoSrc: '/udemy-logo.png',
-    logoAlt: 'Udemy Logo'
-  },
-  {
-    id: 2,
-    degree: 'B2 English Certificate',
-    institution: 'Official Language School of Santa Cruz de Tenerife',
-    year: '2019',
-    logoSrc: '/eoi-logo.png',
-    logoAlt: 'Official Language School Logo'
+    title: 'Guía para crear y vender productos digitales con Inteligencia Artificial',
+    date: '2025-08-07',
+    description: [
+      'Descubre cómo crear y vender productos digitales utilizando herramientas de inteligencia artificial en solo 7 días. Esta guía paso a paso te enseña a identificar nichos rentables, generar ebooks, plantillas y mini cursos rápidamente, lanzar tu producto en Gumroad y promocionarlo de forma orgánica en redes sociales y email marketing.',
+      'Incluye un plan de acción de 7 días, 20 prompts listos para usar, listas de comprobación para cada fase y actualizaciones de por vida con soporte por correo. Ideal para emprendedores, freelancers y creadores que quieren convertir sus ideas en ingresos pasivos.'
+    ],
+    imageSrc: '/ai-guide.webp',
+    imageAlt: 'AI Digital Products Guide',
+    linkHref: 'https://marcocabrerahdez.gumroad.com/l/ai-digital-products-guide'
   }
-];
-
-export const skills = [
-  'Python',
-  'PyTorch',
-  'numpy',
-  'Go',
-  'Java',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Next.js',
-  'vite',
-  'PostgreSQL',
-  'Selenium',
-  'Docker',
-  'Git',
 ];

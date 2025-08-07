@@ -1,15 +1,17 @@
-/** @type {import('next').NextConfig} */
+import nextMDX from '@next/mdx';
+import remarkGfm from 'remark-gfm';
+import remarkFrontmatter from 'remark-frontmatter';
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
+import rehypeHighlight from 'rehype-highlight';
 
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const nextConfig = {
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
+const withMDX = nextMDX({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [remarkGfm, remarkFrontmatter, [remarkMdxFrontmatter, { name: 'meta' }]],
+    rehypePlugins: [rehypeHighlight],
   },
-};
+});
 
-export default nextConfig;
+export default withMDX({
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+});
