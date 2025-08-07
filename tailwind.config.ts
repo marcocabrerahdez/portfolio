@@ -1,28 +1,19 @@
-import type { Config } from 'tailwindcss';
-
-const config: Config = {
-  content: ['./pages/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx,mdx}', './app/**/*.{js,ts,jsx,tsx,mdx}'],
+/** @type {import('tailwindcss').Config} */
+const config = {
+  content: [
+    './app/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     extend: {
-      container: {
-        center: true,
-        padding: {
-          DEFAULT: '0.5rem',
-          sm: '1rem',
-          lg: '2rem',
-          xl: '3rem',
-          '2xl': '3rem',
-          '3xl': '4rem',
-        },
-      },
-
-      extend: {
-        screens: {
-          '4k': '1980px',
-        },
+      colors: {
+        background: '#0f0f1b',
+        muted: '#1e1e2f',
+        primary: '#6d73e6',
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
+
 export default config;
