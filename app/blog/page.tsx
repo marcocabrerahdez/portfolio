@@ -31,6 +31,8 @@ export default function BlogIndex() {
     };
   });
 
+  posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
   return (
     <section className="max-w-3xl mx-auto px-6 py-16">
       <h1 className="text-3xl font-bold mb-8 text-white">Blog</h1>
